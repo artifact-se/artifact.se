@@ -1,1 +1,8 @@
-:
+{
+  "name": "artifact-se",
+  "compatibility_date": "2026-10-16",
+  "assets": {
+    "directory": "./_site",
+    "not_found_handling": "404-page"
+  }
+}
