@@ -3,6 +3,7 @@ name: 'Artifact.se'
 description: 'Artifact is a personal blog about my random projects in tech, knifemaking, and art.'
 motivational: 'The blacksmiths home only has wooden spoons.'
 logo: 'assets/images/logo.png'
+url: 'https://artifact.se'
 baseurl: ''
 disqus: ''
 email: 'admin@artifact.se'
@@ -66,5 +67,22 @@ paginate: 10
 
 
 
-# Exclude metadata and development time dependencies (like Grunt plugins)
-exclude: [README.markdown, package.json, grunt.js, Gruntfile.js, Gruntfile.coffee, node_modules]
+# Publish only site content, not build tooling or development sources.
+exclude:
+  - README.markdown
+  - README.md
+  - docs
+  - tools
+  - package.json
+  - package-lock.json
+  - Gemfile
+  - Gemfile.lock
+  - dockerfile
+  - grunt.js
+  - Gruntfile.js
+  - Gruntfile.coffee
+  - node_modules
+  - vendor
+  - assets/scss
+  - assets/css/custom.css.map
+  - assets/css/test.html

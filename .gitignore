@@ -7,10 +7,9 @@ vendor
 
 # Dependencies
 node_modules/
-package-lock.json
 
-# Ruby
-Gemfile.lock
+# Cloudflare local state
+.wrangler/
 
 # Logs
 *.log
